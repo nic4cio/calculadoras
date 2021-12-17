@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,
+		initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>getkcal</title>
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<img src="12-2-sonic-the-hedgehog-png-9-thumb.png" alt="getkcal">
+
+			</header>
+
+
+			<div class="content">
+				<form id="form">
+					<div class="form-group">
+						<label for="gender">Seu sexo</label>
+						<select id="gender">
+							<option value="default"> - </option>
+							<option value="male">Masculino</option>
+							<option value="female">Feminino</option>
+							<option value="other">Outro</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="age">Sua idade</label>
+						<input type="number" id="age" name="age" min="0">
+					</div>
+					<div class="form-group">
+						<label for="weight">Seu peso</label>
+						<input type="number" id="weight" name="weight" min="0">
+					</div>
+					<div class="form-group">
+						<label for="height">Sua altura</label>
+						<input type="number" id="height" name="height" min="0">
+					</div>
+					<div class="form-group">
+						<label for="activity_level">Seu nível de atividade física</label>
+						<select id="activity_level">
+							<option value="null"> -</option>
+							<option value="1.2">Sedentário</option>
+							<option value="1.375">Pouca atividade</option>
+							<option value="1.55">Atividade moderada</option>
+							<option value="1.725">Atividade intensa</option>
+							<option value="1.9">Atividade muito intensa</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<button type="submit">Calcular!</button>
+					</div>
+				</form>	
+
+				<div class="result-container" id="result"></div>	
+			</div>
+    	</div>		
+
+		<script src="script.js"></script>
+	</body>
+</html>
+	
